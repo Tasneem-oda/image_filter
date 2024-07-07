@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>image filter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <canvas></canvas>
+            <div class="image-box">
+                <img class="img">
+            </div>
+            <div class="upload-box">
+                <label for="upload" class="upload">upload</label>
+                <input type="file" name="" id="upload">
+            </div>
+        </div>
+        <div class="filters">
+            <div class="saturate">
+                <label for="saturate">saturate</label>
+                <input type="range"  id="saturate" min="0" max="200" value="100">
+            </div>
+            <div class="contrast">
+                <label for="contrast">contrast</label>
+                <input type="range"  id="contrast" min="0" max="200" value="100">
+            </div>
+            <div class="brightness">
+                <label for="brightness">brightness</label>
+                <input type="range"  id="brightness" min="0" max="200" value="100">
+            </div>
+            <div class="sepia">
+                <label for="sepia">sepia</label>
+                <input type="range"  id="sepia" min="0" max="200" value="0" >
+            </div>
+            <div class="gray-scale">
+                <label for="gray-scale">grayscale</label>
+                <input type="range"  id="gray-scale" min="0" max="1" value="0" step="0.1">
+            </div>
+            <div class="blur">
+                <label for="blur">blur</label>
+                <input type="range"  id="blur" min="0" max="10" value="0" step="0.1">
+            </div>
+            <div class="hue-rotate">
+                <label for="hue-rotate">hue rotate</label>
+                <input type="range"  id="hue-rotate" min="0" max="350" value="0" step="0.1">
+            </div>
+            <div class="buttons">
+                <a href="" class="download" download="image">download</a>
+                <span class="reset" onclick="resetvalue()"> reset</span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
